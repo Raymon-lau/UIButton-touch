@@ -15,6 +15,7 @@
 		8D3590E71CEEFFEA000CFF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3590E51CEEFFEA000CFF75 /* LaunchScreen.storyboard */; };
 		8D3590F21CEEFFEA000CFF75 /* RMRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3590F11CEEFFEA000CFF75 /* RMRuntimeTests.m */; };
 		8D3590FD1CEEFFEA000CFF75 /* RMRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3590FC1CEEFFEA000CFF75 /* RMRuntimeUITests.m */; };
+		8DD537521D07ACFF0065EECC /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD537511D07ACFF0065EECC /* UIButton+touch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8D3590F81CEEFFEA000CFF75 /* RMRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3590FC1CEEFFEA000CFF75 /* RMRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMRuntimeUITests.m; sourceTree = "<group>"; };
 		8D3590FE1CEEFFEA000CFF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD537501D07ACFF0065EECC /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
+		8DD537511D07ACFF0065EECC /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				8D3590DB1CEEFFEA000CFF75 /* AppDelegate.m */,
 				8D3590DD1CEEFFEA000CFF75 /* ViewController.h */,
 				8D3590DE1CEEFFEA000CFF75 /* ViewController.m */,
+				8DD537501D07ACFF0065EECC /* UIButton+touch.h */,
+				8DD537511D07ACFF0065EECC /* UIButton+touch.m */,
 				8D3590E01CEEFFEA000CFF75 /* Main.storyboard */,
 				8D3590E31CEEFFEA000CFF75 /* Assets.xcassets */,
 				8D3590E51CEEFFEA000CFF75 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				8D3590DF1CEEFFEA000CFF75 /* ViewController.m in Sources */,
 				8D3590DC1CEEFFEA000CFF75 /* AppDelegate.m in Sources */,
 				8D3590D91CEEFFEA000CFF75 /* main.m in Sources */,
+				8DD537521D07ACFF0065EECC /* UIButton+touch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RMRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanghaipaizhan.RMRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RMRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shanghaipaizhan.RMRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +506,7 @@
 				8D3591031CEEFFEA000CFF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D3591041CEEFFEA000CFF75 /* Build configuration list for PBXNativeTarget "RMRuntimeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +515,7 @@
 				8D3591061CEEFFEA000CFF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D3591071CEEFFEA000CFF75 /* Build configuration list for PBXNativeTarget "RMRuntimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +524,7 @@
 				8D3591091CEEFFEA000CFF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
