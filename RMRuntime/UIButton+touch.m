@@ -50,18 +50,6 @@
     });
 }
 
-- (NSTimeInterval)timeInterVal
-{
-    // 动态获取关联对象
-    return [objc_getAssociatedObject(self, _cmd) doubleValue];
-}
-
-- (void)setTimeInterVal:(NSTimeInterval)timeInterVal
-{
-    // 动态设置关联对象
-    objc_setAssociatedObject(self, @selector(timeInterVal), @(timeInterVal), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
 - (void)newSendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event
 {
     if ([NSStringFromClass(self.class) isEqualToString:@"UIButton"]) {
@@ -78,6 +66,18 @@
         }
     }
     [self newSendAction:action to:target forEvent:event];
+}
+
+- (NSTimeInterval)timeInterVal
+{
+    // 动态获取关联对象
+    return [objc_getAssociatedObject(self, _cmd) doubleValue];
+}
+
+- (void)setTimeInterVal:(NSTimeInterval)timeInterVal
+{
+    // 动态设置关联对象
+    objc_setAssociatedObject(self, @selector(timeInterVal), @(timeInterVal), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)setIsExcuteEvent:(BOOL)isExcuteEvent
