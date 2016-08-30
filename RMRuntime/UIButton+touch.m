@@ -59,10 +59,7 @@
         if (self.isExcuteEvent) return;
         if (self.timeInterVal > 0) {
             self.isExcuteEvent = YES;
-            dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, self.timeInterVal * NSEC_PER_SEC);
-            dispatch_after(time, dispatch_get_main_queue(), ^{
-                [self performSelector:@selector(setIsExcuteEvent:)];
-            });
+            [self performSelector:@selector(setIsExcuteEvent:) withObject:nil afterDelay:self.timeInterVal];
         }
     }
     [self newSendAction:action to:target forEvent:event];
